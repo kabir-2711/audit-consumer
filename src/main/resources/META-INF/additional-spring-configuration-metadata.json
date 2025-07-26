@@ -1,0 +1,84 @@
+{
+	"properties": [
+		{
+			"name": "eureka.client.fetch-registry",
+			"type": "java.lang.String",
+			"description": "Specifies whether the client should fetch the Eureka registry. If set to true, the client retrieves a list of all registered services from the Eureka server."
+		},
+		{
+			"name": "spring.discovery.locator.lower-case-service-id",
+			"type": "java.lang.String",
+			"description": "Determines whether the service IDs in the routes created by the Discovery Locator should be converted to lowercase. Useful for consistent routing when service IDs are case-sensitive."
+		},
+		{
+			"name": "eureka.instance.prefer-ip-address",
+			"type": "java.lang.String",
+			"description": "Indicates whether the instance should register with its IP address instead of its hostname. Useful in environments where hostname resolution is unreliable."
+		},
+		{
+			"name": "eureka.instance.instance-id",
+			"type": "java.lang.String",
+			"description": "Defines the unique instance ID for the service registered in Eureka. Typically includes the application name, IP address, and port to ensure uniqueness."
+		},
+		{
+			"name": "eureka.client.service-url.default-zone",
+			"type": "java.lang.String",
+			"description": "Specifies the default Eureka server URL(s) that the client will connect to for service registration and discovery. Typically formatted as a URL ending with '/eureka/'."
+		},
+		{
+			"name": "eureka.client.register-with-eureka",
+			"type": "java.lang.String",
+			"description": "Specifies whether the client should register itself with the Eureka server. If set to true, the application becomes discoverable by other services."
+		},
+		{
+			"name": "config.property.path",
+			"type": "java.lang.String",
+			"description": "Additional configuration property file path"
+		},
+		{
+			"name": "config.cache.reload.midnight",
+			"type": "java.lang.String",
+			"description": "Spring cache reload cron expression to schedule at midnight everyday"
+		},
+		{
+			"name": "config.cache.reload.hour",
+			"type": "java.lang.String",
+			"description": "Spring cache reload cron expression to schedule at evry hour everyday"
+		},
+		{
+			"name": "management.endpoints.web.base-path",
+			"type": "java.lang.String",
+			"description": "Path on which actuator services will be exposed"
+		},
+		{
+			"name": "management.stackdriver.metrics.export.enabled",
+			"type": "java.lang.String",
+			"description": "Property to determine the usage of stackdriver metrics"
+		},
+		{
+			"name": "management.endpoints.web.exposure.include",
+			"type": "java.lang.String",
+			"description": "Property to include actuator services"
+		},
+		{
+			"name": "config.service.log-pattern",
+			"type": "java.lang.String",
+			"description": "Log message pattern"
+		},
+		{
+			"name": "config.kafka.server-details",
+			"type": "java.lang.String",
+			"description": "KAFKA server ip or DNS"
+		},
+		{
+			"name": "config.kafka.enable-kafka",
+			"type": "java.lang.Boolean",
+			"description": "Flag to switch on/off KAFKA integration"
+		},
+		{
+			"name": "config.kafka.log-topic",
+			"type": "java.lang.String",
+			"description": "KAFKA log log topic"
+		}
+	]
+}
